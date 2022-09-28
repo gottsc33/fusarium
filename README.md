@@ -1,7 +1,7 @@
 # __Fusarium avenaceum__
-Genomic resources for _Fusarium avenaceum__ v1.0
+Genomic resources for _Fusarium avenaceum_ 
 
-## Genome Assembly
+## Genome Assembly v1.0
 Fusav_v1.0.fa[]
 
 ## Gene Annotation
