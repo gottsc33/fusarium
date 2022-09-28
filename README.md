@@ -1,5 +1,5 @@
 # __Fusarium avenaceum__
-Genomic resources for _Fusarium avenaceum_ 
+Genomic resources for _Fusarium avenaceum_ strain #
 
 ## Genome Assembly v1.0
 [Fusav_v1.0.fa](https://zenodo.org/api/files/b0905a91-e2d3-4874-bb63-47900ffe0e4d/Fusav_v1.0.fa)
