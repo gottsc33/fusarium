@@ -1,5 +1,5 @@
-# **Fusarium avenaceum**
-Genomic resources for **Fusarium avenaceum** v1.0
+# __Fusarium avenaceum__
+Genomic resources for _Fusarium avenaceum__ v1.0
 
 ## Genome Assembly
 Fusav_v1.0.fa[]
