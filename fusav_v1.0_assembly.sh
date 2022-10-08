@@ -6,7 +6,7 @@
 #ran one DNA sample on MinIon with a R10.3 Version flowcell. Power outages occured twice during sequencing run requiring the use of a read recovery.
 
 #read recover example
-/opt/ont/minknow/bin/recover_reads /var/lib/minknow/data/queued_reads/complete_reads_79098d43-4d8e-4210-ba20-0ed38e317a79/ --output-directory /media/chris/Drive_2/genomes/fuscarium/run1_restart/
+/opt/ont/minknow/bin/recover_reads /var/lib/minknow/data/queued_reads/complete_reads_79098d43-4d8e-4210-ba20-0ed38e317a79/ --output-directory ./genomes/fuscarium/run1_restart/
 
 #basecalling of recovered reads
 guppy_basecaller -i ../run1/ -c dna_r10.3_450bps_hac.cfg -r -s ../run1/hac_called/ --device cuda:0
@@ -229,7 +229,7 @@ samtools index reads_merged.sorted.bam
 
 #polish assembly NO CHANGES FOUND
 python3 nanopolish_makerange.py ./genomes/fuscarium/polishing/flye_assembly.fasta | parallel --results nanopolish.results -P 8 \
-    nanopolish variants --consensus -o polished.{1}.vcf -w {1} -r ./genomes/fuscarium/filtered_fuscarium_run1.fastq.gz -b /media/chris/Drive_2/genomes/fuscarium/polishing/reads.sorted.bam -g /media/chris/Drive_2/genomes/fuscarium/polishing/flye_assembly.fasta -t 4 --min-candidate-frequency 0.1
+    nanopolish variants --consensus -o polished.{1}.vcf -w {1} -r ./genomes/fuscarium/filtered_fuscarium_run1.fastq.gz -b ./genomes/fuscarium/polishing/reads.sorted.bam -g ./genomes/fuscarium/polishing/flye_assembly.fasta -t 4 --min-candidate-frequency 0.1
     nanopolish vcf2fasta -g ./genomes/fuscarium/polishing/flye_assembly.fasta polished.*.vcf > polished_genome.fa
     #evalute polishing
     mkdir analysis
