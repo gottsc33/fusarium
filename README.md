@@ -25,3 +25,6 @@ Genomic resources for _Fusarium avenaceum_ strain #
 
 ### Proteins
 [Fusav_v1.0.proteins.putative_function.fasta](https://zenodo.org/api/files/b0905a91-e2d3-4874-bb63-47900ffe0e4d/Fusav_v1.0.proteins.putative_function.fasta)
+
+### Secondary Metabolite Clusters
+[Fusav_v1.0_antiSMASH.zip](https://zenodo.org/api/files/b0905a91-e2d3-4874-bb63-47900ffe0e4d/Fusav_v1.0_antiSMASH.zip?versionId=7a4443c9-9070-4855-8d8d-60b658339eb4)
